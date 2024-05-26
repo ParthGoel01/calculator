@@ -1,0 +1,129 @@
+:root{
+    --primary-color : #000000;
+    --secondary-color : #ffffff;
+}
+*{
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: none;
+}
+.dark-theme{
+    --primary-color : #ffffff;
+    --secondary-color : #000000;
+}
+h1{
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-align: center;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url('https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digits{
+    padding: 1rem;
+    border-top: 2px solid var(--primary-color);
+}
+.calc{
+    border: 2px solid var(--primary-color);
+}
+.button{
+    padding: 1rem;
+    background-color: rgb(74, 73, 73);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 20px;
+    margin: 0.25rem;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.row2{
+    background-color: rgb(32, 32, 32);
+}
+.input{
+    padding: 1rem;
+    border: none;
+    height: 150px;
+    font-size: 27px;
+    background:none;
+    color: var(--primary-color);
+    width: 100%;
+}
+#button1{
+    font-size: 15px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color : var(--secondary-color);
+    margin-top: 1rem;
+    margin-left: -0.1rem;
+    cursor: pointer;
+}
+@media screen and (max-width:450px) {
+    .button{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    .digits{
+        padding: 0.5rem;
+    }
+    .input{
+        font-size: 20px;
+    }
+    .row{
+        margin: 0.25rem;
+    }
+    h1{
+        font-size: 24px;
+    }
+    #button1{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:350px) {
+    .button{
+        width: 3rem;
+        height: 3rem;
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+    .digits{
+        padding: 0.5rem;
+    }
+    .input{
+        font-size: 18px;
+        height:125px;
+    }
+    .row{
+        margin: 0.25rem;
+    }
+    h1{
+        font-size: 22px;
+    }
+    #button1{
+        font-size: 12px;
+    }
+}
